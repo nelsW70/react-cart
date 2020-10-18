@@ -10,14 +10,14 @@ const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
-        cart,
+        cart
       }}
     >
       {children}
     </AppContext.Provider>
   )
 }
-// make sure use
+// make sure to use
 export const useGlobalContext = () => {
   return useContext(AppContext)
 }
